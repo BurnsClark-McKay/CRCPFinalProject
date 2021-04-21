@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 26.0, 85.0, 1298.0, 617.0 ],
+		"rect" : [ 34.0, 77.0, 1298.0, 617.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,63 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-62",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2958.0, 1025.000002861022949, 150.0, 89.0 ],
+					"presentation_linecount" : 6,
+					"text" : "HarmonicOddPartials takes a loadbang to instantiate volume, a number to base the partials on, and a bang to output a note."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2192.0, 1018.0, 150.0, 89.0 ],
+					"text" : "HarmonicEvenPartials takes a loadbang to instantiate volume, a number to base the partials on, and a bang to output a note."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1447.0, 998.0, 150.0, 89.0 ],
+					"presentation_linecount" : 6,
+					"text" : "doubleModulatedNoteB takes a loadbang to instantiate most factors, a number to determine the modulation rate, and a bang to output a note."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 611.0, 1026.5, 150.0, 89.0 ],
+					"text" : "doubleModulatedNote takes a loadbang to instantiate most factors, a number to determine the modulation rate, and a bang to output a note."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-223",
 					"maxclass" : "newobj",
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2692.0, 348.0, 123.0, 22.0 ],
-					"text" : "scale 0. 1365. 0. 300."
+					"text" : "scale 0. 1365. 0. 250."
 				}
 
 			}
@@ -58,7 +108,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2870.0, 348.0, 117.0, 22.0 ],
-					"text" : "scale 0. 1365. 0. 25."
+					"text" : "scale 0. 1365. 0. 50."
 				}
 
 			}
@@ -70,7 +120,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1928.0, 338.831169128417969, 123.0, 22.0 ],
-					"text" : "scale 0. 1365. 0. 300."
+					"text" : "scale 0. 1365. 0. 250."
 				}
 
 			}
@@ -82,7 +132,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2106.0, 338.831169128417969, 117.0, 22.0 ],
-					"text" : "scale 0. 1365. 0. 25."
+					"text" : "scale 0. 1365. 0. 50."
 				}
 
 			}
@@ -142,7 +192,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2870.0, 436.0, 150.0, 34.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Actually horizontal position"
 				}
 
@@ -166,7 +215,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2922.0, 472.0, 150.0, 48.0 ],
-					"presentation_linecount" : 3,
 					"text" : "NOTE:, must not allow to be greater than 20 or ear drums will suffer."
 				}
 
@@ -281,7 +329,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2803.0, 729.5, 153.0, 75.0 ],
-					"presentation_linecount" : 5,
 					"text" : "Sends each successful note call to a different note generator, preventing clipping and allow for stacking to occur."
 				}
 
@@ -378,7 +425,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2546.0, 477.0, 150.0, 34.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Only outputs note when acceleration in set range."
 				}
 
@@ -391,7 +437,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2387.0, 493.0, 150.0, 48.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Prevents notes from outputting at rate greater than 4/second."
 				}
 
@@ -620,7 +665,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2100.0, 436.0, 150.0, 34.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Actually horizontal position"
 				}
 
@@ -644,7 +688,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2152.0, 472.0, 150.0, 48.0 ],
-					"presentation_linecount" : 3,
 					"text" : "NOTE:, must not allow to be greater than 20 or ear drums will suffer."
 				}
 
@@ -759,7 +802,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2033.0, 729.5, 153.0, 75.0 ],
-					"presentation_linecount" : 5,
 					"text" : "Sends each successful note call to a different note generator, preventing clipping and allow for stacking to occur."
 				}
 
@@ -856,7 +898,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1776.0, 477.0, 150.0, 34.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Only outputs note when acceleration in set range."
 				}
 
@@ -869,7 +910,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1617.0, 493.0, 150.0, 48.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Prevents notes from outputting at rate greater than 4/second."
 				}
 
@@ -2075,124 +2115,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-67",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2007.5, 1563.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-68",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 2015.0, 1499.0, 88.0, 22.0 ],
-					"text" : "NoteGenerator"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-69",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 2067.5, 1417.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-70",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 2001.0, 1417.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-72",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 2094.0, 1464.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-61",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1837.5, 1563.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-62",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1845.0, 1499.0, 88.0, 22.0 ],
-					"text" : "NoteGenerator"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-64",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1897.5, 1417.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-65",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1831.0, 1417.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-66",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1924.0, 1464.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-59",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -2373,16 +2295,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1660.5, 1563.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-87",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2442,30 +2354,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-71",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1668.0, 1499.0, 88.0, 22.0 ],
-					"text" : "NoteGenerator"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-63",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1720.5, 1417.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -2473,43 +2361,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 327.75, 640.5, 32.0, 22.0 ],
 					"text" : "gate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-54",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1654.0, 1417.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-46",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1747.0, 1464.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "function",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "float", "", "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1886.0, 1279.0, 200.0, 100.0 ]
 				}
 
 			}
@@ -2551,12 +2402,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-2",
-					"linecount" : 4,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1.0, 5.0, 150.0, 62.0 ],
-					"text" : "Burns Clark-McKay\nFinal Project\nBeat Boxers (trademark)\n4/7/2021"
+					"patching_rect" : [ 1.0, 5.0, 341.0, 89.0 ],
+					"text" : "Burns Clark-McKay\nFinal Project\nBeat Boxers (trademark): Turning beat downs into sick beats.\nExcept for when technology says no and doesn't let you do cool stuff with Bluetooth.\n4/7/2021"
 				}
 
 			}
@@ -3821,13 +3672,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-71", 2 ],
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
 					"order" : 3,
 					"source" : [ "obj-47", 0 ]
@@ -3937,13 +3781,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-71", 0 ],
-					"source" : [ "obj-54", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-55", 0 ]
 				}
@@ -3989,105 +3826,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-61", 1 ],
-					"order" : 0,
-					"source" : [ "obj-62", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"order" : 1,
-					"source" : [ "obj-62", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-71", 1 ],
-					"source" : [ "obj-63", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-62", 1 ],
-					"source" : [ "obj-64", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-62", 0 ],
-					"source" : [ "obj-65", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-62", 2 ],
-					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-67", 1 ],
-					"order" : 0,
-					"source" : [ "obj-68", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"order" : 1,
-					"source" : [ "obj-68", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-68", 1 ],
-					"source" : [ "obj-69", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-68", 0 ],
-					"source" : [ "obj-70", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 1 ],
-					"order" : 0,
-					"source" : [ "obj-71", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"order" : 1,
-					"source" : [ "obj-71", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-68", 2 ],
-					"source" : [ "obj-72", 0 ]
 				}
 
 			}
@@ -4388,13 +4128,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "NoteGenerator.maxpat",
-				"bootpath" : "~/Desktop/CRCP 1330/FinalProject",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "doubleModulatedNote.maxpat",
 				"bootpath" : "~/Desktop/CRCP 1330/FinalProject",
 				"patcherrelativepath" : ".",
